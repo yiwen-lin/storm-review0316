@@ -924,7 +924,8 @@ $panelcount: 11; // set # of panels/sections here
         color: #a1a1a1;
         transition: .3s;
 
-        &.active {
+        &.active,
+        &.on {
             color: #000;
             font-weight: 500;
         }

@@ -69,7 +69,7 @@ $(function () {
 
                         var anchorID = getScene;
                         $('#anchor'+ anchorID).addClass('active').siblings().removeClass('active');
-                        
+
                         if (getScene >= 0) {
                             var anchorID = getScene;
                             $('.section [data-aos]').removeClass('aos-animate')
@@ -102,6 +102,11 @@ $(function () {
                         isInProgress = true;
                         result = 0;
                         num += 1;
+                        if (num == 7) {
+                            $('#anchor6').addClass('on');
+                        } else {
+                            $('#anchor6').removeClass('on');
+                        }
                         $('#anchor' + num).click();
                         setTimeout(()=>{
                             isInProgress = false;
@@ -111,6 +116,11 @@ $(function () {
                         result = 0;
                         num -= 1;
                         $('#anchor' + num).click();
+                        if (num == 7) {
+                            $('#anchor6').addClass('on');
+                        } else {
+                            $('#anchor6').removeClass('on');
+                        }
                         setTimeout(()=>{
                             isInProgress = false;
                         },1000);
